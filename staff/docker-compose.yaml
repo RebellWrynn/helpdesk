@@ -1,9 +1,9 @@
 services:
   Postgres:
-    image: postgres:16.5-alpine3.19
+    image: postgres:17.1-alpine3.19
     environment:
-      POSTGRES_DB: "helpdesk_app"
+      POSTGRES_DB: "helpdeskapp"
       POSTGRES_USER: "user1"
       POSTGRES_PASSWORD: "pgpwd4help"
-      ports:
-        -"5432:5432"
+    ports:
+      - "5432:5432"
