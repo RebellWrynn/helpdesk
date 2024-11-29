@@ -59,8 +59,7 @@ div.log_box{
 
 }
 
-/* button */
-button.btn_auth{
+div.btn_auth{
 	display: inline-block;
 	background: #ccc;
 	color: #000000;

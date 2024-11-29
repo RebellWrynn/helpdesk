@@ -9,24 +9,36 @@
 
 
 	<body>
+
+
       <div class= "log_box">
         <h1 class= "title">Пройдите авторизацию</h1>
+
+
             <div class= "login">
               <form class="form1">
-                  <input class="input_login" type="text" placeholder="Введите логин" />
+                <input id="login" class="input_login" type="text" placeholder="Введите логин" />
               </form>
             </div>
+
+
             <div class= "passwd">
               <form class="form1">
                 <p class="input_title"></p>
-                  <input type="password" class="input_passwd" placeholder="Введите пароль" />
-              </form>
+                <input id="password" type="password" class="input_passwd" placeholder="Введите пароль" />
+              </form>              
             </div>
-              <div class= "button">
-              <button class="btn_auth">Авторизоваться</button>
+
+            {% csrf_token %}
+
+            <div class= "btn_auth">
+              <button>Авторизоваться</button>
             </div>
-          </div>
-      <div>
+
+
+      </div>
+
+
 	</body>
 
 </Html>
